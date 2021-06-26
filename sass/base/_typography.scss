@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: 1.5rem;
+  color: $White;
+  @media only screen and (max-width: 44.4em) {
+    color: $Very-dark-blue;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+}

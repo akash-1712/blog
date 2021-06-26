@@ -1,0 +1,131 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5rem;
+  align-items: center;
+  @media only screen and (max-width: 44.4em) {
+    position: relative;
+    justify-content: space-between;
+  }
+  &-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media only screen and (max-width: 44.4em) {
+      // display: none;
+      position: absolute;
+      top: 5rem;
+      flex-direction: column;
+      background-color: $White;
+      border-radius: 10px;
+      z-index: 2;
+      box-shadow: rgba(#000, 0.3) 0px 7px 15px 0px;
+    }
+  }
+  &-start {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    @media only screen and (max-width: 44.4em) {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    @media only screen and (max-width: 44.4em) {
+      flex-direction: column;
+      border-bottom: 2px solid $Grayish-blue;
+      padding: 1.5rem;
+      min-width: 21rem;
+      text-align: center;
+    }
+  }
+}
+
+.query {
+  position: relative;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+  @media only screen and (max-width: 44.4em) {
+    justify-content: center;
+  }
+  &-para {
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $White;
+    }
+  }
+}
+.answer {
+  position: absolute;
+  top: 3rem;
+  left: -1rem;
+  background-color: $White;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: rgba(#000, 0.3) 0px 7px 15px 0px;
+  z-index: 10;
+  @media only screen and (max-width: 44.4em) {
+    position: relative;
+    top: initial;
+    left: initial;
+    z-index: initial;
+    box-shadow: none;
+    background-color: $Grayish-blue;
+    align-items: center;
+    min-width: 25rem;
+  }
+}
+.arrow {
+  font-size: 1.6rem;
+  color: $White;
+  @media only screen and (max-width: 44.4em) {
+    color: $Very-dark-blue;
+  }
+}
+
+.list {
+  list-style: none;
+  &-items {
+    font-size: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 44.4em) {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+//bars
+.bars {
+  display: none;
+  @media only screen and (max-width: 44.4em) {
+    display: block;
+  }
+  &-logo {
+    font-size: 2.7rem;
+    color: $White;
+  }
+}
