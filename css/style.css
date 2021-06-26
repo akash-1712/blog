@@ -49,6 +49,10 @@ body {
       .menu-start {
         flex-direction: column;
         padding: 1.5rem; } }
+    @media only screen and (max-width: 35em) {
+      .menu-start {
+        gap: 1px;
+        padding-top: 0.5rem; } }
   .menu-slide {
     display: flex;
     flex-direction: row;
@@ -95,7 +99,7 @@ body {
       box-shadow: none;
       background-color: #c8c8cb;
       align-items: center;
-      min-width: 25rem; } }
+      min-width: 20rem; } }
 
 .arrow {
   font-size: 1.6rem;
@@ -114,6 +118,9 @@ body {
       .list-items {
         font-size: 2rem;
         font-weight: 500; } }
+    @media only screen and (max-width: 35em) {
+      .list-items {
+        font-size: 1.35rem; } }
     .list-items:hover, .list-items:focus, .list-items:active {
       font-weight: 700; }
 
@@ -131,8 +138,11 @@ body {
   background-position: center;
   background-size: inherit;
   padding: 3.5rem 0;
-  min-height: 38rem;
+  min-height: 45rem;
   border-bottom-left-radius: 6.25em; }
+  @media only screen and (max-width: 25em) {
+    .header {
+      min-height: 50rem; } }
   .header-box {
     margin: auto;
     width: 90%;
@@ -146,6 +156,31 @@ body {
     width: 100%;
     height: 100%; }
 
+.header-content {
+  width: 70%;
+  margin: auto;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .header-content {
+      width: 80%; } }
+  @media only screen and (max-width: 44.4em) {
+    .header-content {
+      width: 90%; } }
+  @media only screen and (max-width: 35em) {
+    .header-content {
+      width: 97%; } }
+
+.heading-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center; }
+
 .paragraph {
   font-size: 1.5rem;
   color: white; }
@@ -154,6 +189,28 @@ body {
       color: #1f3f5b;
       font-weight: 700;
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 35em) {
+    .paragraph {
+      font-size: 1.35rem; } }
+
+.heading-primary {
+  font-size: 4.5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: white; }
+  @media only screen and (max-width: 35em) {
+    .heading-primary {
+      font-size: 3.2rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-primary {
+      font-size: 2.5rem; } }
+
+.heading-paragraph {
+  font-size: 1.5rem;
+  color: #c8c8cb;
+  margin-top: 1.5rem; }
+  @media only screen and (max-width: 35em) {
+    .heading-paragraph {
+      font-size: 1.2rem; } }
 
 .btn {
   font-size: 1.75rem;
@@ -161,6 +218,7 @@ body {
   border-radius: 50px;
   border: none;
   outline: none;
+  padding: 1rem 1.5rem;
   transition: all 0.5s, transform 0.1s; }
   @media only screen and (max-width: 44.4em) {
     .btn {
@@ -170,10 +228,15 @@ body {
 
 .btn-signup {
   color: #ff3d54;
-  padding: 1rem 1.7rem; }
+  padding: 1rem 1.7rem;
+  border: 1px solid white; }
+  @media only screen and (max-width: 35em) {
+    .btn-signup {
+      font-size: 1.35rem; } }
   .btn-signup:hover, .btn-signup:active {
     color: white;
-    background-color: #ff525d; }
+    background-color: #ff525d;
+    border: 1px solid white; }
     @media only screen and (max-width: 44.4em) {
       .btn-signup:hover, .btn-signup:active {
         background-image: linear-gradient(to right, #ff8f70, #ff7a85); } }
@@ -185,6 +248,9 @@ body {
   padding: 1rem 1.9rem;
   background-color: transparent;
   color: white; }
+  @media only screen and (max-width: 35em) {
+    .btn-login {
+      font-size: 1.35rem; } }
   .btn-login:hover, .btn-login:active {
     color: #ff3d54;
     background-color: white; }
@@ -193,3 +259,24 @@ body {
       color: #1f3f5b; }
       .btn-login:hover, .btn-login:active {
         border: 1px solid #ff3d54; } }
+
+.btn-start {
+  color: #ff525d; }
+  @media only screen and (max-width: 35em) {
+    .btn-start {
+      font-size: 1.35rem; } }
+  .btn-start:hover, .btn-start:active {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white; }
+
+.btn-learn {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white; }
+  @media only screen and (max-width: 35em) {
+    .btn-learn {
+      font-size: 1.35rem; } }
+  .btn-learn:hover, .btn-learn:active {
+    color: #ff525d;
+    background-color: white; }
