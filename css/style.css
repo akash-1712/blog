@@ -261,6 +261,9 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1rem; }
+  @media only screen and (max-width: 38.75em) {
+    .infrastructure-paragraph {
+      text-align: justify; } }
 
 .btn {
   font-size: 1.75rem;
