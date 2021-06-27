@@ -11,7 +11,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Overpass", sans-serif;
-  min-width: 30rem; }
+  min-width: 35rem; }
 
 .hidden {
   display: none; }
@@ -249,6 +249,19 @@ body {
 .future-heading-tritary {
   margin-bottom: 0.8rem; }
 
+.infrastructure-heading-tritary {
+  color: white; }
+  @media only screen and (max-width: 51.25em) {
+    .infrastructure-heading-tritary {
+      font-size: 2.2rem; } }
+
+.infrastructure-paragraph {
+  color: #c8c8cb;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem; }
+
 .btn {
   font-size: 1.75rem;
   font-weight: 600;
@@ -323,7 +336,6 @@ body {
   flex-direction: row;
   overflow: hidden;
   width: 100%;
-  background-color: rgba(200, 200, 203, 0.6);
   padding-top: 15rem;
   margin-top: -10rem;
   padding-bottom: 1.5rem;
@@ -397,3 +409,53 @@ body {
       top: initial;
       transform: initial;
       left: initial; } }
+
+.infrastructure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2d3f;
+  gap: 2rem;
+  border-top-right-radius: 6.25em;
+  border-bottom-left-radius: 6.25em;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  position: relative; }
+  @media only screen and (max-width: 38.75em) {
+    .infrastructure {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10rem; } }
+  .infrastructure-left {
+    flex: 1;
+    background-image: url("../../images/bg-pattern-circles.svg");
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+    background-position: bottom; }
+  .infrastructure-right {
+    flex: 1;
+    padding: 5rem 5rem; }
+    @media only screen and (max-width: 38.75em) {
+      .infrastructure-right {
+        margin-top: -10rem; } }
+    @media only screen and (max-width: 26em) {
+      .infrastructure-right {
+        padding: 5rem 1rem; } }
+  .infrastructure-mobile {
+    position: absolute;
+    bottom: -28%;
+    left: 0;
+    width: 40rem;
+    height: 40rem;
+    z-index: 2; }
+    @media only screen and (max-width: 47em) {
+      .infrastructure-mobile {
+        width: 34rem;
+        height: 35rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .infrastructure-mobile {
+        position: relative;
+        bottom: initial;
+        margin-top: -12rem; } }

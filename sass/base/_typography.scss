@@ -67,3 +67,18 @@
 .future-heading-tritary {
   margin-bottom: 0.8rem;
 }
+
+//infrastructure
+.infrastructure-heading-tritary {
+  color: $White;
+  @media only screen and (max-width: 51.25em) {
+    font-size: 2.2rem;
+  }
+}
+.infrastructure-paragraph {
+  color: $Grayish-blue;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
