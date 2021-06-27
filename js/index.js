@@ -6,7 +6,7 @@ const barsHidden = document.querySelector(".fa-bars");
 const barsShow = document.querySelector(".fa-times");
 const bars = document.querySelector(".bars");
 const menuBar = document.querySelector(".menu-bar");
-//Menu Desktop
+//=================Menu Desktop===========
 const changeIcon = function (elUp, elDown) {
   arrowUp.forEach((val) => {
     val == elUp ? elUp.classList.toggle("hidden") : val.classList.add("hidden");
@@ -46,7 +46,7 @@ const slider = function (event) {
 
 slide.addEventListener("click", slider);
 
-//Menu Mobile
+//====================Menu Mobile==================
 bars.addEventListener("click", function (event) {
   event.preventDefault();
   barsShow.classList.toggle("hidden");
@@ -56,6 +56,7 @@ bars.addEventListener("click", function (event) {
     : (menuBar.style.display = "flex");
 });
 
+// =========================MediaQuery=======================
 const addMediaQuery = function (mediaDesktop) {
   if (mediaDesktop.matches) {
     console.log("widder");

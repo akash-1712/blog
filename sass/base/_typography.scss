@@ -30,3 +30,40 @@
     font-size: 1.2rem;
   }
 }
+.heading-secondary {
+  font-size: 3.5rem;
+  color: $Very-dark-blue;
+  @media only screen and (max-width: 35em) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 25em) {
+    font-size: 2.5rem;
+  }
+}
+.heading-tritary {
+  font-size: 2.5rem;
+  color: $Very-dark-unsaturated-blue;
+  @media only screen and (max-width: 35em) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 25em) {
+    font-size: 1.6rem;
+  }
+}
+
+//future
+.future-paragraph {
+  line-height: 1.5;
+  color: $Very-dark-grayish-blue;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-right: 2rem;
+  text-align: justify;
+  @media only screen and (max-width: 35em) {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+.future-heading-tritary {
+  margin-bottom: 0.8rem;
+}
