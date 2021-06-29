@@ -59,9 +59,13 @@
   font-weight: 600;
   padding-right: 2rem;
   text-align: justify;
+  @media only screen and (max-width: 62.5em) {
+    padding-right: 1px;
+  }
   @media only screen and (max-width: 35em) {
     font-size: 1.2rem;
     text-align: justify;
+    padding-right: 2rem;
   }
 }
 .future-heading-tritary {
@@ -78,10 +82,15 @@
 .infrastructure-paragraph {
   color: $Grayish-blue;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1rem;
+  text-align: justify;
+  @media only screen and (max-width: 52em) {
+    font-size: 1.2rem;
+  }
   @media only screen and (max-width: 38.75em) {
     text-align: justify;
+    padding-right: initial;
   }
 }

@@ -241,10 +241,14 @@ body {
   font-weight: 600;
   padding-right: 2rem;
   text-align: justify; }
+  @media only screen and (max-width: 62.5em) {
+    .future-paragraph {
+      padding-right: 1px; } }
   @media only screen and (max-width: 35em) {
     .future-paragraph {
       font-size: 1.2rem;
-      text-align: justify; } }
+      text-align: justify;
+      padding-right: 2rem; } }
 
 .future-heading-tritary {
   margin-bottom: 0.8rem; }
@@ -258,12 +262,17 @@ body {
 .infrastructure-paragraph {
   color: #c8c8cb;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  text-align: justify; }
+  @media only screen and (max-width: 52em) {
+    .infrastructure-paragraph {
+      font-size: 1.2rem; } }
   @media only screen and (max-width: 38.75em) {
     .infrastructure-paragraph {
-      text-align: justify; } }
+      text-align: justify;
+      padding-right: initial; } }
 
 .btn {
   font-size: 1.75rem;
@@ -462,3 +471,85 @@ body {
         position: relative;
         bottom: initial;
         margin-top: -12rem; } }
+
+.computer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 47em) {
+    .computer {
+      flex-direction: column; } }
+  .computer-left {
+    margin-left: -18%;
+    order: 1;
+    flex: 1;
+    width: 100%;
+    height: auto; }
+    @media only screen and (max-width: 75em) {
+      .computer-left {
+        flex: 1.2; } }
+    @media only screen and (max-width: 68.75em) {
+      .computer-left {
+        margin-left: -22%;
+        max-width: 81rem; } }
+    @media only screen and (max-width: 59em) {
+      .computer-left {
+        margin-left: -25%; } }
+    @media only screen and (max-width: 56em) {
+      .computer-left {
+        margin-left: -19%; } }
+    @media only screen and (max-width: 47em) {
+      .computer-left {
+        order: 1;
+        width: initial;
+        margin-left: initial; } }
+  .computer-right {
+    width: 100%;
+    flex: 1.4;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 10rem;
+    padding-left: 5px;
+    min-width: 55rem; }
+    @media only screen and (max-width: 75em) {
+      .computer-right {
+        min-width: 45rem;
+        padding-right: 6rem;
+        flex: 1.4; } }
+    @media only screen and (max-width: 68.75em) {
+      .computer-right {
+        min-width: 30rem;
+        padding-right: 4rem; } }
+    @media only screen and (max-width: 59em) {
+      .computer-right {
+        padding-right: 1.2rem; } }
+    @media only screen and (max-width: 56em) {
+      .computer-right {
+        padding-right: 2.5rem; } }
+    @media only screen and (max-width: 47em) {
+      .computer-right {
+        width: 90%;
+        padding-left: 2rem;
+        padding-right: 2.5rem;
+        text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .computer-right {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
+    @media only screen and (max-width: 29.4em) {
+      .computer-right {
+        width: 100%;
+        padding-left: 2.5rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .computer-image {
+      max-width: 82rem; } }
+  @media only screen and (max-width: 56em) {
+    .computer-image {
+      max-width: 60rem; } }
